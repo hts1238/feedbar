@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<style type="text/css">
+			body {
+				padding: 0px;
+				margin: 0px;
+			}
+
+			* {
+				font-family: Arial;
+				font-size: 105%;
+				color: #4444ff;
+			}
+
+			div {
+				border-bottom: 1px solid #aaaadd;
+				margin: 10px;
+				padding-bottom: 10px;
+				width: 95%;
+			}
+
+			input, textarea {
+				background-color: #f5f5ff;
+				border: 1px solid #aaaaff;
+				border-radius: 20px;
+				padding: 2%;
+				resize: none;
+			}
+
+			.title {
+				float: left;
+				width: 30%;
+				text-align: right;
+				padding-right: 10px;
+			}
+
+			#i {
+				width: 60%;
+			}
+
+			.submit {
+				text-align: right;
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<form action="handler.php" target="_self">
+
+			<div>
+				<label for=name class=title>Name</label>
+				<input id=i type="text" name="name" placeholder="Your name *" required>
+			</div>
+			
+			<div>
+				<label for=email class=title>Email</label>
+				<input id=i type=email name=email placeholder="Your Email (optinal)">
+			</div>
+			
+			<div>
+				<label for=feedbar class=title>Feedbar<br></label>
+				<textarea id=i name="feedbar" placeholder="Input here your feedbar" required></textarea>
+			</div>
+			
+			<div>
+				<input type="submit" id=submit value="Leave feedbar">
+			</div>
+			
+		</form>
+
+	</body>
+
+</html>
